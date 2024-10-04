@@ -14,35 +14,7 @@ const datafromjson = (res, type) => {
     });
 };
 
-// Function to add data to the JSON file
-const adddatatojson = (res, type, newData) => {
-    fs.readFile("./db.json", 'utf-8', (err, data) => {
-        if (err) {
-            console.log(err);
-            res.end("Error reading data");
-            return;
-        }
-        let jsonData = JSON.parse(data);
-        
-        // Check if the type exists in the JSON data
-        if (!jsonData[type]) {
-            jsonData[type] = [];
-        }
-        
-        // Append new data to the specified type
-        jsonData[type].push(newData);
 
-        // Write the updated data back to the file
-        fs.writeFile("./db.json", JSON.stringify(jsonData, null, 2), 'utf-8', (err) => {
-            if (err) {
-                console.log(err);
-                res.end("Error writing data");
-                return;
-            }
-            res.end("Data added successfully");
-        });
-    });
-};
 
 const server = http.createServer((req, res) => {
     if (req.url === "/home" && req.method === "GET") {
@@ -57,19 +29,7 @@ const server = http.createServer((req, res) => {
     else if (req.url === "/user" && req.method === "GET") {
         datafromjson(res, 'user');
     } 
-    else if (req.url === "/addproduct" && req.method === "POST") {
-        let body = [];
-        req.on('data', (chunk) => {
-            body.push(chunk);
-        });
-        
-        req.on('end', () => {
-            body = Buffer.concat(body).toString();
-            const newProduct = JSON.parse(body);
-            
-            adddatatojson(res, 'products', newProduct);
-        });
-    } 
+    
     else {
         res.end('404 Not Found');
     }
