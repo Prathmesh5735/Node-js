@@ -1,0 +1,330 @@
+/* Navbar css */
+
+.navbar {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff !important;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-brand:hover {
+    color: #0056b3 !important;
+  }
+  
+  .nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #495057 !important;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #007bff !important;
+  }
+  
+  .btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .dropdown-toggle {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .dropdown-menu {
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #6c757d;
+  }
+  
+  .dropdown-item {
+    font-size: 0.9rem;
+    color: #495057;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  img.rounded-circle {
+    transition: transform 0.3s ease;
+  }
+  
+  img.rounded-circle:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.25rem;
+    }
+  
+    .nav-link {
+      font-size: 0.9rem;
+    }
+  }
+  
+/* FOOTER */
+
+/* Footer.css */
+
+.footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+  }
+  
+  .footer-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #0056b3;
+  }
+  
+  .text-muted {
+    font-size: 0.9rem;
+  }
+
+  /* HOMEPAGE */
+  /* Homepage.css */
+
+.homepage {
+    background: #f8f9fa;
+    padding: 4rem 0;
+  }
+  
+  .homepage h1 {
+    color: #343a40;
+  }
+  
+  .homepage p {
+    color: #6c757d;
+  }
+  
+  .btn-neutral {
+    background-color: #ffffff;
+    color: #6c757d;
+    border: 1px solid #dee2e6;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-neutral:hover {
+    background-color: #f1f1f1;
+    color: #343a40;
+    border-color: #d1d1d1;
+  }
+  
+  .illustration-container {
+    position: relative;
+  }
+  
+  .decorative-blob {
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(135deg, #6c63ff, #c1c8ff);
+    bottom: -40px;
+    right: -40px;
+    z-index: -1;
+  }
+
+  /* Signup */
+
+  /* General Section Styles */
+.signup-section {
+    background-color: #f7f9fc; /* Soft background */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  
+  /* Card Styling */
+  .signup-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .signup-card h2 {
+    color: #0d6efd; /* Primary color */
+    font-weight: bold;
+  }
+  
+  .signup-card img {
+    border-radius: 15px;
+    max-height: 350px;
+    object-fit: cover;
+  }
+  
+  /* Form Input Styling */
+  .signup-input {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .signup-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25); /* Focus effect */
+    border-color: #0d6efd;
+  }
+  
+  /* Button Styles */
+  .btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.03); /* Slight hover animation */
+  }
+  
+  /* Link Styling */
+  .signup-link {
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .signup-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .signup-card img {
+      max-height: 250px; /* Adjust image height for smaller screens */
+      margin-top: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .signup-card img {
+      max-height: 200px;
+      width: 100%; /* Ensure the image scales */
+    }
+  
+    .signup-card h2 {
+      font-size: 1.5rem;
+    }
+  }
+  /* LOGIN  */
+
+  /* Custom CSS for SignIn Component */
+
+/* Background adjustments */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background: #f8f9fa; /* Fallback color for unsupported image loading */
+  }
+  
+  /* Card styling */
+  .card {
+    border: none;
+    border-radius: 12px;
+  }
+  
+  .card-body {
+    background: rgba(255, 255, 255, 0.95); /* Subtle opacity for blending */
+    border-radius: 12px;
+  }
+  
+  /* Button enhancements */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  /* Form input focus */
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Link styling */
+  .text-primary {
+    text-decoration: none;
+  }
+  
+  .text-primary:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  /* Media queries for better responsiveness */
+  @media (max-width: 768px) {
+    .card {
+      margin: 0 10px; /* Reduce side padding on smaller screens */
+    }
+  
+    .btn-primary {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .btn-primary {
+      font-size: 0.85rem;
+    }
+  }
+
+  /* Create Notes */
+
+  
